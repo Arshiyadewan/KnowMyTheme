@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIND THEME</title>
+    <link rel="stylesheet" href="style-findtheme.css">
+</head>
+<body>
+    
+    <div class="quiz-container">
+        <h1>FIND THEME</h1>
+        <p>ANSWER A FEW QUESTIONS</p>
+
+        <div class="ques" id="q1">
+            <h2>HOW IS YOUR ENERGY TODAY?</h2>
+            <button onclick="addanswer('high')">HIGH</button>
+            <button onclick="addanswer('medium')">MEDIUM</button>
+            <button onclick="addanswer('low')">LOW</button>
+        </div>
+
+        <div class="ques hidden" id="q2">
+            <h2>WHAT DO YOU NEED MOST?</h2>
+            <button onclick="addanswer('joy')">JOY</button>
+            <button onclick="addanswer('focus')">FOCUS</button>
+            <button onclick="addanswer('calm')">CALM</button>
+            <button onclick="addanswer('growth')">GROWTH</button>
+        </div>
+
+        <div class="ques hidden" id="q3">
+            <h2>PICK ONE</h2>
+            <button onclick="addanswer('travel')">ESCAPE</button>
+            <button onclick="addanswer('learn')">LEARN</button>
+            <button onclick="addanswer('balance')">BALANCE</button>
+        </div>
+
+        <div class="result hidden" id="result">
+            <h2>YOUR THEME IS</h2>
+            <h1 id="theme-name"></h1>
+            <a id="theme-link" href="#">GO TO THEME</a>
+        </div>
+    </div>
+
+<script src="find.js"></script>
+</body>
+</html>
